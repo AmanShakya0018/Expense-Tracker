@@ -69,10 +69,14 @@ export const FinancialRecordList = () => {
           {rows.map((row) => {
             prepareRow(row);
             return (
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600" {...row.getRowProps()}>
+              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700" {...row.getRowProps()}>
                 {row.cells.map((cell) => (
-                  <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                    {...cell.getCellProps()}> {cell.render("Cell")} </td>
+                  <td
+                    className="px-6 py-4 font-medium text-gray-900 whitespace-normal break-words dark:text-white max-w-xs"
+                    {...cell.getCellProps()}
+                  >
+                    {cell.render("Cell")}
+                  </td>
                 ))}
               </tr>
             );

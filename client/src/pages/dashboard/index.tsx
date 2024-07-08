@@ -21,7 +21,7 @@ export const Dashboard = () => {
     // <div className="dashboard-container w-screen">
     // <div className="w-screen h-full p-3 border border-black rounded-lg shadow [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
     <div className="w-screen h-screen flex flex-col overflow-hidden">
-      <div className="flex-grow p-3 border border-black rounded-lg shadow overflow-auto" style={{ background: 'radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)' }}>
+      <div className="flex-grow p-3 border border-black shadow overflow-auto" style={{ background: 'radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)' }}>
         <DashHeader />
         <h3 className="mb-2 text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
           Welcome {user?.firstName}! Here Are Your Finances:

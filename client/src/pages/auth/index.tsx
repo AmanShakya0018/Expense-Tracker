@@ -11,7 +11,7 @@ import Header from "../../components/Header";
 export const Auth = () => {
   return (
     <div className="w-screen h-screen flex flex-col overflow-hidden">
-      <div className="flex-grow p-3 border border-black rounded-lg shadow overflow-auto" style={{ background: 'radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)' }}>
+      <div className="flex-grow p-3 border border-blacks shadow overflow-auto" style={{ background: 'radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%)' }}>
         <SignedOut>
           <Header />
           <div className="relative pt-10 ml-auto">
