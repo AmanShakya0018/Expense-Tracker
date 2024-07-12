@@ -1,9 +1,7 @@
 import { useMemo } from "react";
-import {
-  FinancialRecord,
-  useFinancialRecords,
-} from "../../contexts/financial-record-context";
+
 import { useTable, Column } from "react-table";
+import { FinancialRecord, useFinancialRecords } from "../contexts/financial-record-context";
 
 export const FinancialRecordList = () => {
   const { records, deleteRecord } = useFinancialRecords();
